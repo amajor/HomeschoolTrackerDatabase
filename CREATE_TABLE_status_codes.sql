@@ -1,4 +1,4 @@
-CREATE TABLE `homeschool`.`status_codes` (
+CREATE TABLE IF NOT EXISTS `homeschool`.`status_codes` (
   `status_id` INT NOT NULL,
   `description` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`status_id`)

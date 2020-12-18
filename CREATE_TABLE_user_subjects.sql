@@ -1,4 +1,4 @@
-CREATE TABLE `homeschool`.`user_subjects` (
+CREATE TABLE IF NOT EXISTS `homeschool`.`user_subjects` (
   `user_id` INT NOT NULL,
   `subject_id` INT NOT NULL,
   `create_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

@@ -1,4 +1,4 @@
-CREATE TABLE `homeschool`.`subject_lessons` (
+CREATE TABLE IF NOT EXISTS `homeschool`.`subject_lessons` (
   `lesson_id` INT NOT NULL AUTO_INCREMENT,
   `lesson_number` VARCHAR(3) NOT NULL,
   `subject_id` INT NOT NULL,

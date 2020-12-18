@@ -1,4 +1,4 @@
-CREATE TABLE `homeschool`.`user_tasks` (
+CREATE TABLE IF NOT EXISTS `homeschool`.`user_tasks` (
   `user_id` INT NOT NULL,
   `task_id` INT NOT NULL,
   `status_prep` INT NOT NULL DEFAULT 0,

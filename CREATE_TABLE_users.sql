@@ -1,4 +1,4 @@
-CREATE TABLE `homeschool`.`users` (
+CREATE TABLE IF NOT EXISTS `homeschool`.`users` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `user_name` VARCHAR(16) NOT NULL,
   `user_role` VARCHAR(45) NOT NULL DEFAULT 'student',
