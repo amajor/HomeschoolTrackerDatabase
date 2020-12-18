@@ -35,7 +35,8 @@ echo "Creating TABLE named 'lesson_tasks'..."
 mysql --defaults-file=config.txt "$DB" < "CREATE_TABLE_lesson_tasks.sql"
 
 # Populate our lesson_tasks table
-# echo "  Populating 'lesson_tasks'..."
+echo "  Populating 'lesson_tasks'..."
+mysql --defaults-file=config.txt "$DB" < "INSERT_INTO_lesson_tasks.sql"
 
 # Build our 'status_codes' table
 echo "Creating TABLE named 'status_codes'..."
@@ -62,4 +63,5 @@ echo "Creating TABLE named 'user_tasks'..."
 mysql --defaults-file=config.txt "$DB" < "CREATE_TABLE_user_tasks.sql"
 
 # Populate our user_tasks table
-# echo "  Populating 'user_tasks'..."
+echo "  Populating 'user_tasks'..."
+mysql --defaults-file=config.txt "$DB" < "INSERT_INTO_user_tasks.sql"
