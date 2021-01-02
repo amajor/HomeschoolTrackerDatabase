@@ -2,7 +2,7 @@ CREATE VIEW `view_tasks_to_prep` AS
 SELECT
 	CONCAT(user_tasks.user_id, "_", user_tasks.task_id) AS "key",
 	user_tasks.user_id AS "userId",
-	user_tasks.task_id As "taskId",
+	user_tasks.task_id AS "taskId",
 	user_name AS "studentName",
 	subject_name AS "subject",
 	lesson_number AS "lessonNumber",
